@@ -7,10 +7,9 @@ header.main-head {
     top: 0px;
     z-index: 100;
     background: $black-color;
-    width: 100%;
     nav {
-        width: 85%;
-        margin: auto;
+        width: 100vw;
+        padding: 1rem 0rem;
         @include flex(row-reverse, flex-start, center, center);
         min-height: 10vh;
         flex-wrap: wrap;

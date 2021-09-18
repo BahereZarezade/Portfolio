@@ -152,8 +152,8 @@ header.main-head {
 }
 
 header.main-head nav {
-  width: 85%;
-  margin: auto;
+  width: 100vw;
+  padding: 1rem 0rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
