@@ -69,7 +69,6 @@ h6 {
   z-index: 10;
   text-shadow: 1px 1px 1px #000;
   padding: 1rem 1rem;
-  color: #fff;
 }
 
 h1 {
@@ -102,7 +101,7 @@ p {
 }
 
 p {
-  color: #001ea3;
+  color: #000c44;
 }
 
 button {
@@ -220,11 +219,16 @@ section.intro .intro-text {
 }
 
 section.intro .intro-text h2 {
-  color: #001ea3;
+  padding-top: 2rem;
+  background: linear-gradient(left, #38d39f, #38a4d3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 section.intro .intro-text h3 {
-  color: #001ea3;
+  color: #000c44;
+  padding-top: 2rem 0rem;
 }
 
 section.intro .intro-text .intro-social {

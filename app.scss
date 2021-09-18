@@ -52,10 +52,15 @@ section.intro {
         display: flex;
         flex-direction: column;
         h2 {
-            color: $dark-blue;
+            padding-top: 2rem;
+            background: $gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
         }
         h3 {
             color: $dark-blue;
+            padding-top: 2rem 0rem;
         }
         .intro-social {
             display: flex;
