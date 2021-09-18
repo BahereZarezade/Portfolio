@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Vazir', 'Montserrat', sans-serif;
+    line-height: 45px;
+    direction: rtl;
+    text-align: right;
+    /* حذف اسکرول افقی */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #ddd;
+}
+
+/* Utility Classes */
+a {
+    color: $grey-text;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-size: 266%;
+    text-shadow: $text-shadow;
+    z-index: 3;
+    font-weight: bold;
+    &:hover {
+        color: $grey-text-hover;
+    }
+}
+
+.container {
+    width: 90vw;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    z-index: 10;
+    text-shadow: $text-shadow;
+    padding: 1rem 1rem;
+    color: $white-color;
+}
+h1 {
+    font-size: $header1;
+}
+h2 {
+    font-size: $header2;
+}
+h3 {
+    font-size: $header3;
+}
+h4,
+h5 {
+    font-size: $header4;
+}
+li,
+button,
+label,
+input,
+a,
+p {
+    font-size: $text;
+    z-index: 3;
+    text-shadow: $text-shadow;
+    font-weight: normal;
+}
+p {
+    color: $grey-color;
+}
+button {
+    font-weight: bold;
+    z-index: 3;
+    border: none;
+    background: $background-color-button;
+    color: #fff;
+    flex: 1 1 auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    animation: buttonAnimation 1.5s infinite alternate 1.5s;
+    animation-iteration-count: 3;
+    &:hover {
+        background: $background-color-button-hover;
+    }
+    &:focus {
+        background: $background-color-button-focus;
+        outline-style: solid;
+        outline-color: $white-color;
+    }
+}
+
+ul {
+    list-style: none;
+}
+li {
+    list-style: none;
+    z-index: 3;
+    text-shadow: $text-shadow;
+    padding: 0.5rem 1rem;
+}
+span {
+    color: $span-color;
+    padding: 1rem 0.5rem;
+}
+
+//mixin include
+@mixin flex($direction, $justify, $align-items, $text-align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+    text-align: $text-align;
+}

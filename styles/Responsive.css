@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Kalame';
+  src: url("../fonts/vazir/") format("truetype");
+}
+
+@font-face {
+  font-family: 'Bettina';
+  src: url("../fonts/bettina/BettinaScript/Bettina.ttf") format("truetype"), url("../fonts/bettina/BettinaScript/Bettina.woff");
+}
+
+@font-face {
+  font-family: 'GreatVibes-Regular';
+  src: url("../fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url("../fonts/vazir/Vazir-Black-FD.ttf") format("truetype"), url("../fonts/vazir/Vazir-Regular-FD.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Vazir', 'Montserrat', sans-serif;
+  line-height: 45px;
+  direction: rtl;
+  text-align: right;
+  /* حذف اسکرول افقی */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #ddd;
+}
+
+/* Utility Classes */
+a {
+  color: #d8d8d8;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-size: 266%;
+  text-shadow: 1px 1px 1px #000;
+  z-index: 3;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #5a5a5a;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  z-index: 10;
+  text-shadow: 1px 1px 1px #000;
+  padding: 1rem 1rem;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 2rem;
+  z-index: 3;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: normal;
+}
+
+p {
+  color: #2b2b2b;
+}
+
+button {
+  font-weight: bold;
+  z-index: 3;
+  border: none;
+  background: #1d3452;
+  color: #fff;
+  flex: 1 1 auto;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  animation: buttonAnimation 1.5s infinite alternate 1.5s;
+  animation-iteration-count: 3;
+}
+
+button:hover {
+  background: #707d8f;
+}
+
+button:focus {
+  background: #707d8f;
+  outline-style: solid;
+  outline-color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  z-index: 3;
+  text-shadow: 1px 1px 1px #000;
+  padding: 0.5rem 1rem;
+}
+
+span {
+  color: white;
+  padding: 1rem 0.5rem;
+}
+/*# sourceMappingURL=Responsive.css.map */
