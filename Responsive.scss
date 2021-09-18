@@ -10,7 +10,7 @@
                 cursor: pointer;
                 span {
                     padding: 0.2rem 2rem;
-                    background: rgb(0, 245, 245);
+                    background: rgb(94, 164, 255);
                     margin: 0.5rem 0rem;
                     display: block;
                     transition: all 0.5s ease-in-out;
@@ -44,14 +44,15 @@
             }
             .toggle .line1 {
                 transform: rotateZ(45deg) translateY(300%);
-                background: white;
+                background: rgb(94, 164, 255);
             }
             .toggle .line2 {
                 opacity: 0;
+                background: rgb(94, 164, 255);
             }
             .toggle .line3 {
                 transform: rotateZ(-45deg) translateY(-300%);
-                background: white;
+                background: rgb(94, 164, 255);
             }
         }
     }

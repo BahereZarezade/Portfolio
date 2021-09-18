@@ -102,7 +102,7 @@ p {
 }
 
 p {
-  color: #2b2b2b;
+  color: #001ea3;
 }
 
 button {
@@ -148,7 +148,7 @@ header.main-head {
   position: fixed;
   top: 0px;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.747);
+  background: black;
 }
 
 header.main-head nav {
@@ -199,7 +199,7 @@ header.main-head nav .container ul {
 }
 
 section.intro {
-  min-height: 80vh;
+  min-height: 70vh;
   width: 100%;
   margin: auto;
   flex-wrap: wrap;
@@ -220,11 +220,11 @@ section.intro .intro-text {
 }
 
 section.intro .intro-text h2 {
-  color: rgba(0, 0, 0, 0.747);
+  color: #001ea3;
 }
 
 section.intro .intro-text h3 {
-  color: #2b2b2b;
+  color: #001ea3;
 }
 
 section.intro .intro-text .intro-social {
@@ -235,8 +235,6 @@ section.intro .intro-text .intro-social a img {
   width: 30%;
   height: 30%;
   margin-top: 4rem;
-  align-items: center;
-  justify-content: center;
 }
 
 section.intro .intro-images {

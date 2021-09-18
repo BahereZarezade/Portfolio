@@ -39,7 +39,7 @@ header.main-head {
 }
 // ///////////////////////////////intro Section/////////////////////////////////
 section.intro {
-    min-height: 80vh;
+    min-height: 70vh;
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
@@ -52,10 +52,10 @@ section.intro {
         display: flex;
         flex-direction: column;
         h2 {
-            color: $black-color;
+            color: $dark-blue;
         }
         h3 {
-            color: $grey-color;
+            color: $dark-blue;
         }
         .intro-social {
             display: flex;
@@ -65,8 +65,6 @@ section.intro {
                     width: 30%;
                     height: 30%;
                     margin-top: 4rem;
-                    align-items: center;
-                    justify-content: center;
                 }
             }
         }
