@@ -6,11 +6,14 @@ header.main-head {
     position: fixed;
     top: 0px;
     z-index: 100;
-    background: $black-color;
+    background: $white-color;
+    width: 100vw;
+    box-shadow: 0px 1px 15px #000;
     nav {
-        width: 100vw;
+        width: 95%;
+        margin: 0 0 0 auto;
         padding: 1rem 0rem;
-        @include flex(row-reverse, flex-start, center, center);
+        @include flex(row, flex-start, center, center);
         min-height: 10vh;
         flex-wrap: wrap;
         .container {
@@ -18,19 +21,17 @@ header.main-head {
             flex-direction: row-reverse;
             justify-content: flex-start;
             align-items: center;
-            h1 {
-                margin: 1rem;
-                font-size: 1.75rem;
-            }
             .logo {
                 @include flex(row-reverse, flex-start, center, center);
                 flex: 1 1 10rem;
-                img {
-                    width: 15%;
+                h1 {
+                    margin: 1rem;
+                    font-size: 1.75rem;
+                    color: $grey-color;
                 }
             }
             ul {
-                @include flex(row-reverse, space-evenly, center, center);
+                @include flex(row, space-evenly, center, center);
                 flex: 1 1 40rem;
                 flex-wrap: wrap;
             }
@@ -44,13 +45,15 @@ section.intro {
     margin: auto;
     flex-wrap: wrap;
     position: absolute;
-    top: 30%;
+    top: 22%;
     @include flex(row, space-between, center, center);
     .intro-text {
         margin: 2rem;
         flex: 1 1 40rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         h2 {
             padding-top: 2rem;
             background: $gradient;
@@ -58,18 +61,18 @@ section.intro {
             -webkit-text-fill-color: transparent;
             display: inline-block;
         }
-        h3 {
+        h3,
+        h4 {
             color: $dark-blue;
             padding-top: 2rem 0rem;
         }
         .intro-social {
-            display: flex;
+            @include flex(row, center, center, center);
             a {
                 // margin: 5rem;
                 img {
-                    width: 30%;
-                    height: 30%;
-                    margin-top: 4rem;
+                    width: 55%;
+                    margin: 2rem 2rem 1rem 2rem;
                 }
             }
         }
@@ -77,6 +80,7 @@ section.intro {
     .intro-images {
         flex: 1 1 40rem;
         z-index: 10;
+        margin: 1rem;
         .splash {
             position: relative;
             top: 0%;
@@ -84,6 +88,28 @@ section.intro {
             height: 100%;
             z-index: -1;
             width: 100%;
+        }
+        svg {
+            width: 20%;
+            position: relative;
+            top: 0;
+            right: 32%;
+            height: 100%;
+            z-index: 20;
+        }
+    }
+    #clock-arrow {
+        animation: clock 1.5s infinite linear;
+        transform-box: fill-box;
+        transform-origin: bottom;
+    }
+
+    @keyframes clock {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(360deg);
         }
     }
 }

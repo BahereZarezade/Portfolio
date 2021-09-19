@@ -37,27 +37,26 @@ body {
   /* حذف اسکرول افقی */
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #ddd;
+  background-color: #f8f8f8;
 }
 
 /* Utility Classes */
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
 a {
-  color: #d8d8d8;
+  color: #2b2b2b;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  font-size: 266%;
-  text-shadow: 1px 1px 1px #000;
+  font-size: 90%;
   z-index: 3;
   font-weight: bold;
 }
 
 a:hover {
   color: #5a5a5a;
-}
-
-.container {
-  width: 90vw;
-  margin: auto;
 }
 
 h1,
@@ -67,7 +66,6 @@ h4,
 h5,
 h6 {
   z-index: 10;
-  text-shadow: 1px 1px 1px #000;
   padding: 1rem 1rem;
 }
 
@@ -92,11 +90,9 @@ li,
 button,
 label,
 input,
-a,
 p {
   font-size: 2rem;
   z-index: 3;
-  text-shadow: 1px 1px 1px #000;
   font-weight: normal;
 }
 
@@ -134,7 +130,6 @@ ul {
 li {
   list-style: none;
   z-index: 3;
-  text-shadow: 1px 1px 1px #000;
   padding: 0.5rem 1rem;
 }
 
@@ -143,11 +138,24 @@ span {
   padding: 1rem 0.5rem;
 }
 
+.active {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
 @media screen and (max-width: 842px) {
+  header.main-head nav .logo {
+    flex: 1 1 20rem;
+    margin-top: 2rem;
+    flex-direction: column !important;
+  }
   header.main-head nav .burger {
     position: relative;
     display: block;
     cursor: pointer;
+    z-index: 100;
   }
   header.main-head nav .burger span {
     padding: 0.2rem 2rem;
@@ -167,14 +175,16 @@ span {
     align-items: center;
     justify-content: space-evenly !important;
     transition: transform 1s ease-in-out;
+    z-index: 90;
   }
   header.main-head nav ul.nav-link a {
     color: #fff;
     font-size: 2rem;
     text-decoration: underline;
   }
-  header.main-head nav #logo {
-    align-items: center !important;
+  header.main-head nav ul {
+    flex: 1 1 60rem;
+    margin: 2rem 0rem;
   }
   header.main-head nav .nav-open {
     transform: translateX(-100%);
@@ -191,12 +201,45 @@ span {
     transform: rotateZ(-45deg) translateY(-300%);
     background: #5ea4ff;
   }
+  section.intro {
+    top: 30%;
+  }
   footer h4 {
     text-align: center;
     order: 2;
   }
   footer ul {
     order: 1;
+  }
+}
+
+@media (min-width: 843) and (max-width: 1332px) {
+  html {
+    font-size: 53%;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 601) and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 769) and (max-width: 1332px) {
+  html {
+    font-size: 100%;
   }
 }
 /*# sourceMappingURL=Responsive.css.map */

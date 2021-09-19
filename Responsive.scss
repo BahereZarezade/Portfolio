@@ -4,10 +4,16 @@
 @media screen and (max-width: 842px) {
     header.main-head {
         nav {
+            .logo {
+                flex: 1 1 20rem;
+                margin-top: 2rem;
+                flex-direction: column !important;
+            }
             .burger {
                 position: relative;
                 display: block;
                 cursor: pointer;
+                z-index: 100;
                 span {
                     padding: 0.2rem 2rem;
                     background: rgb(94, 164, 255);
@@ -29,14 +35,16 @@
                 align-items: center;
                 justify-content: space-evenly !important;
                 transition: transform 1s ease-in-out;
+                z-index: 90;
                 a {
                     color: #fff;
                     font-size: 2rem;
                     text-decoration: underline;
                 }
             }
-            #logo {
-                align-items: center !important;
+            ul {
+                flex: 1 1 60rem;
+                margin: 2rem 0rem;
             }
             //////////////////////////////////
             .nav-open {
@@ -56,6 +64,9 @@
             }
         }
     }
+    section.intro {
+        top: 30%;
+    }
     //Footer
     footer {
         h4 {
@@ -65,5 +76,34 @@
         ul {
             order: 1;
         }
+    }
+}
+
+@media (min-width: 843) and (max-width: 1332px) {
+    html {
+        font-size: 53%;
+    }
+    svg {
+        width: 80%;
+    }
+    nav {
+        width: 100%;
+    }
+}
+
+//////////////////font size////////////////
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 60%;
+    }
+}
+@media (min-width: 601) and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+}
+@media (min-width: 769) and (max-width: 1332px) {
+    html {
+        font-size: 100%;
     }
 }
