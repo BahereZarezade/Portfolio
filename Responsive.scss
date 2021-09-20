@@ -1,7 +1,7 @@
 @import 'font&variables';
 @import 'global';
 // BURGUR THING
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 1023px) {
     header.main-head {
         nav {
             .logo {
@@ -65,7 +65,7 @@
         }
     }
     section.intro {
-        top: 30%;
+        margin: 70% auto;
     }
     //Footer
     footer {
@@ -75,7 +75,17 @@
         }
         ul {
             order: 1;
+            li a {
+                img {
+                    width: 100%;
+                    height: 50%;
+                }
+            }
         }
+    }
+    section.projects {
+        @include flex(column, space-between, center, center);
+        margin-top: 8rem;
     }
 }
 
